@@ -1,0 +1,453 @@
+//主視覺色調
+$color-red: #ad5958
+$color-orange: #e59f28
+$color-blue: #068fbf
+$color-green: #6faf4a
+
+$color-background: #F8F8F8
+$color-border: #EBEBEB
+
+
+//輔色系
+$color-black: #222
+$light-gray: #eee
+
+
+//文字顏色
+$main-font-color: #666
+
+*
+	position: relative
+	-webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+a
+	text-decoration: none
+	color: #666
+
+a:hover
+	text-decoration: none
+	cursor: pointer
+
+
+body
+	color: #666
+
+
+@mixin text2($size,$color)
+	font-size: $size
+	color: $color
+
+
+//全螢幕
+@mixin full
+	width: 100vw
+	height: 100vh
+
+//寬高比例滿版
+@mixin fill
+	width: 100%
+	height: 100%
+
+//設定大小
+@mixin size($w,$h)
+	width: $w
+	height: $h
+
+//上下左右置中
+@mixin center
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translateX(-50%) translateY(-50%)
+
+//左右置中
+@mixin margin-center
+	margin: 0 auto
+
+//邊線
+@mixin border($color)
+	border: 1px solid $color
+
+//文字
+@mixin text($font-size,$color,$font-weight,$letter-spacing)
+  font-size: $font-size
+  color: $color
+  font-weight: $font-weight
+  letter-spacing: $letter-spacing
+
+body
+	margin: 0px
+	padding: 0px
+	overflow-x: hidden
+	
+
+header
+	+full
+	background-color: #eee
+
+header
+	height: 550px
+
+section
+	+full
+	height: auto
+
+footer
+	background: #333
+	color: #fff
+
+.wrapper
+	width: 100vw
+
+.banner
+	background: url('https://3hsyn13u3q9dhgyrg2qh3tin-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/SplitShire-2065.jpg') center center no-repeat
+	background-size: 1441px 
+
+.navbar
+	box-shadow: -1px -2px 12px -2px rgba(0,0,0,0.2)
+	border: none
+	border-radius: 0px
+	padding: 0px 100px
+
+//Nav Strat
+
+.navbar-default
+	background-color: #fff
+
+.navbar-brand
+	padding: 3px
+
+.navbar-brand 
+	img
+		display: inline-block
+		width: 135px
+
+.navbar-nav
+	.fa:before
+		margin-right: 5px
+
+
+.navbar-nav > li
+	height: 43px
+	margin-left: 10px
+	transition: .2s
+
+.navbar-nav > li:hover
+	border-bottom: 3px solid $color-blue
+
+.navbar-nav.nav-user > li:hover
+	border: none
+	a
+		color: $color-blue 
+	
+.nav-item
+	padding: 5px 10px 0px 10px
+
+.navbar-form
+	input
+		border-radius: 40px
+		display: none
+	button
+		border: none
+		color: #666
+
+//Nav End
+
+.search_bar
+	+size(800px,100px)
+	+center
+	background-color: rgba(0,0,0,0.4)
+	top: 70%
+	
+	input[type="text"]
+		display: inline-block
+		border: none
+		+size(700px,100px)
+		background-color: transparent
+		+text(24pt,#fff,normal,1px)
+		padding: 30px
+
+		&:focus
+			outline: none
+			
+
+	button
+		display: inline-block
+		+size(90px,100px)
+		border: none
+		background-color: transparent
+		outline: none
+
+		i
+			color: white
+			font-size: 24pt
+
+.search_input::-webkit-input-placeholder
+	color: rgba(255,255,255,0.7)
+	font-style: italic
+
+.search_input::-moz-placeholder
+	color: rgba(255,255,255,0.7)
+	font-style: italic
+
+.search_input::-ms-input-placeholder
+	color: rgba(255,255,255,0.7)
+	font-style: italic
+
+
+.home-title
+	margin-top: 30px
+	margin-bottom: 30px
+	padding: 10px 0px
+	text-align: center
+
+.home-title
+	.fa:before
+		margin-right: 10px
+
+.home-title h2
+	+text(30px,$color-blue,500,5px)
+
+.home-title.latest h2
+	color: #fff
+
+.pintour-box
+	+border($color-border)
+	border-radius: 10px
+	overflow: hidden
+	transition: ease-in 0.3s
+	background-color: #fff
+
+	&:hover
+		box-shadow: 0px 0px 12px rgba(0,0,0,0.2)
+		.box-pic
+			overflow: hidden
+			img
+				transform: scale(1.13)
+
+.pintour-box.col-md-3
+	padding: 0
+	margin-right: 10px
+	width: 24%
+
+.box-pic
+	height: 200px
+	overflow: hidden
+
+
+.box-pic
+	overflow: hidden
+	img
+		width: 100%
+		height: 100%
+		transition: .3s
+
+.pinker-pic
+	+size(60px,60px)
+	border-radius: 60px
+	position: absolute
+	top: -15%
+	left: 5%
+	overflow: hidden
+	border: 3px solid #fff
+	z-index: 1
+
+.pinker-pic
+	img
+		width: 100%
+
+
+.date-budget
+	height: 30px
+	background-color: #ebebeb
+
+.date
+	display: inline-block
+	margin-left: 90px
+	+text(14pt,#222,bolder,1px)
+	padding: 5px
+
+.budget
+	display: inline-block
+	color: $color-red
+
+.box-liked
+	display: inline-block
+	+size(50px,50px)
+	margin-left: 20px
+	padding: 20px 0px
+	font-size: 15pt
+
+.box-liked
+	p
+		color: $color-red
+
+.liked
+	display: inline-block
+	vertical-align: top
+
+.box-text
+	+text(14pt,#666,normal,2px)
+	display: inline-block
+	vertical-align: top
+	+size(200px,60px)
+	padding: 10px
+	line-height: 20pt
+
+.box-tags
+	+size(90%,50px)
+	+margin-center
+	padding: 10px 0px
+
+.tags
+	height: 30px
+	display: inline-block
+	padding: 6px 10px 4px 10px
+	border-radius: 100px
+	color: #fff
+
+.tags.area
+	background-color: $color-green
+
+.tags.days
+	background-color: $color-blue
+
+.tags.point
+	background-color: $color-orange
+
+
+.ajax-bullet
+	border: 1.5px solid $color-blue
+	
+	&:hover
+		cursor: pointer
+		border: none
+		background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)
+
+.ajax-bullet.bullet-white
+	border: 1.5px solid #fff
+		
+	&:hover
+		cursor: pointer
+		border: none
+		background: #fff
+
+.ajax-box
+	margin: 30px auto
+	width: 210px
+	height: 50px
+	padding: 15px
+
+.ajax-bullet
+	display: inline-block
+	width: 40px
+	height: 15px
+	border-radius: 40px
+
+
+//swiper
+.swiper-container
+	+fill
+
+.swiper-slide
+	height: 400px
+
+.hot-pic
+	width: 250px
+	border-radius: 200px
+	height: 250px
+	+margin-center
+	margin-top: 30px
+	overflow: hidden
+
+	img
+		width: 100%
+
+.hot-pic-id
+	+margin-center
+	width: 200px
+	height: 30px
+	text-align: center
+	margin-top: 30px
+
+.catogory
+	height: 220px
+	padding: 50px
+	padding-left: 150px
+
+
+.catogory-list
+	width: 200px
+	height: 150px
+	position: relative
+	display: inline-block
+	vertical-align: top
+	letter-spacing: 2px
+
+	li:nth-child(1)
+		margin-top: 10px
+
+
+	li
+		padding: 10px
+
+		a
+			color: silver
+			font-weight: 100
+
+	&:before
+		content: " "
+		display: inline-block
+		width: 5px
+		height: 20px
+		background: $color-blue
+		margin-right: 10px
+		position: absolute
+		top: -2px
+		left: -20px
+	
+.copyright
+	height: 50px
+	background: #222
+	font-weight: 100
+	letter-spacing: 1px
+	padding: 10px
+
+.copy-text
+	display: inline-block
+	+center
+.social
+	margin-left: 50px
+	display: inline-block
+	
+	a
+		color: #fff
+		display: inline-block
+		width: 20px
+
+
+#section1
+	background: #f3f3f1
+
+#section2
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)
+
+#section2
+	.pintour-box
+		border: none 
+
+#section3
+	.container
+		width: 100%
+
+	
+
+
+
+
+	
+
+
+
