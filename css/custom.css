@@ -13,20 +13,13 @@ a:hover {
   cursor: pointer; }
 
 body {
-  color: #666; }
+  color: #666;
+  background: #f3f3f1; }
 
 body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden; }
-
-header {
-  width: 100vw;
-  height: 100vh;
-  background-color: #eee; }
-
-header {
-  height: 550px; }
 
 section {
   width: 100vw;
@@ -42,7 +35,8 @@ footer {
 
 .banner {
   background: url("https://3hsyn13u3q9dhgyrg2qh3tin-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/SplitShire-2065.jpg") center center no-repeat;
-  background-size: 1441px; }
+  background-size: 1441px;
+  height: 550px; }
 
 .navbar {
   -webkit-box-shadow: -1px -2px 12px -2px rgba(0, 0, 0, 0.2);
@@ -388,5 +382,134 @@ footer {
 #section2 .pintour-box {
   border: none; }
 
-#section3 .container {
+#section3 {
+  background: #fff; }
+  #section3 .container {
+    width: 100%; }
+
+.result-search-bar, .result-filter {
+  height: 100px;
+  padding: 25px; }
+
+.result-search-bar input[type="text"] {
+  width: 100%;
+  height: 50px; }
+
+.result-search-bar .input-group {
   width: 100%; }
+
+.filter-date, .filter-budget, .filter-liked, .result-sreach-btn {
+  display: inline-block; }
+
+.result-filter {
+  padding-top: 0px; }
+  .result-filter a {
+    height: 50px;
+    width: 250px;
+    margin-right: 38px;
+    line-height: 40px; }
+  .result-filter .caret {
+    margin-left: 5px; }
+
+.result-sreach-btn button {
+  height: 50px;
+  width: 250px;
+  background: #ad5958;
+  font-size: 18pt;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px; }
+  .result-sreach-btn button:hover {
+    background: #ad5958 !important;
+    font-size: 18pt;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px; }
+
+.pintour-box.hori {
+  width: 100%;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  margin-bottom: 20px; }
+  .pintour-box.hori .box-pic {
+    width: 25%;
+    display: inline-block;
+    border-radius: 5px 0px 0px 5px;
+    overflow: hidden;
+    vertical-align: top; }
+  .pintour-box.hori .box-info {
+    padding: 20px 10px 10px 10px;
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    position: relative; }
+    .pintour-box.hori .box-info .pinker-pic {
+      left: -5%;
+      top: 60%; }
+  .pintour-box.hori .box-text {
+    font-size: 16pt;
+    width: 80%;
+    height: auto; }
+  .pintour-box.hori .pre-content {
+    font-size: 16px;
+    padding: 10px;
+    width: 80%;
+    letter-spacing: 1px;
+    color: rgba(102, 102, 102, 0.7);
+    line-height: 18pt; }
+  .pintour-box.hori .budget {
+    color: #222;
+    position: absolute;
+    top: 13%;
+    right: 0;
+    background-color: #fff; }
+    .pintour-box.hori .budget .fa-usd {
+      border: 2px solid;
+      width: 20px;
+      text-align: center;
+      border-radius: 100%;
+      margin-right: 5px; }
+  .pintour-box.hori .box-bottom {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    left: 1%; }
+    .pintour-box.hori .box-bottom .box-tag {
+      display: inline-block;
+      margin-top: 10px; }
+    .pintour-box.hori .box-bottom .date-liked {
+      font-size: 14pt;
+      background-color: #fff; }
+      .pintour-box.hori .box-bottom .date-liked .date {
+        font-weight: 400; }
+        .pintour-box.hori .box-bottom .date-liked .date .fa-clock-o {
+          margin-right: 5px; }
+      .pintour-box.hori .box-bottom .date-liked .box-liked {
+        font-size: 14pt;
+        color: #222; }
+
+#pagination {
+  cursor: pointer;
+  width: 100%;
+  height: 200px; }
+  #pagination .pagination {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    color: #068fbf; }
+    #pagination .pagination .active span {
+      background-color: #068fbf; }

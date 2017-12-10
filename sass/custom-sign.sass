@@ -1,0 +1,159 @@
+@import "mixin.sass"
+
+*
+	position: relative
+
+html,body
+	padding: 0
+	margin: 0
+	width: 100%
+	height: 100%
+
+body
+	background: url(https://3hsyn13u3q9dhgyrg2qh3tin-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/SplitShire-2065.jpg) no-repeat center center fixed
+	background-size: cover
+
+
+button
+	display: block
+
+.pintour-sign
+	display: flex
+	align-items: center
+
+
+.pintour-sign
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translateX(-50%) translateY(-50%)
+
+.pintour-sign-info
+	width: 800px
+	height: 400px
+	position: relative
+	border-radius: 5px
+	color: #f3f3f3
+	background-color: rgba(#222,.9)
+
+	.infos
+		padding: 100px
+		p
+			padding: 10px
+			font-size: 20px
+	.info-right
+		position: absolute
+		right: 0
+		top: 0
+	.sign-up
+		display: inline-block
+		padding: 10px 20px
+		margin: 50px 0 0 10px
+		+border(white)
+		text-align: center
+		width: 100px
+		border-radius: 5px
+		transition: .3s
+		cursor: pointer
+
+		&:hover
+			color: #222
+			background-color: white
+
+
+@keyframes showtitle
+	0%
+		
+
+
+.pintour-sign-slide
+	position: absolute
+	right: 0
+	width: 400px
+	height: 450px
+	background-color: #fff
+	border-radius: 5px
+	box-shadow: 1px 1px 12px rgba(#222,.2)
+	transition-duration: .5s
+	// display: none
+
+.pintour-sign-slide.up
+	height: 520px
+	
+.title
+	margin-top: 20px
+	display: inline-block
+	width: 100%
+	text-align: center
+	height: 50px
+	line-height: 50px
+	font-size: 20px
+	color: $color-blue
+
+
+
+	.fa
+		margin-right: 10px
+
+.input-g
+	width: 80%
+	// +border(#222)
+	+center
+	display: flex
+	flex-flow: column nowrap
+	align-items: center
+	
+	label
+		align-self: flex-start
+		display: block
+		padding: 10px
+		color: rgba(#222,.4)
+	input
+		align-self: flex-start
+		width: 90%
+		margin-left: 10px
+		border: none
+		border-bottom: 1px solid rgba(#222,.4)
+		// transition: .3s
+		margin-bottom: 10px
+		&:focus
+			outline: none
+	.focus-click
+		animation: showline .3s ease
+		border-bottom: 1.5px solid $color-blue
+	button
+		align-self: flex-end
+		margin-right: 20px
+		margin-top: 20px
+		background-color: $color-orange
+		color: #fff
+		letter-spacing: 2px
+		border: none
+
+
+@keyframes showline
+		0%
+			width: 0%
+		100%
+			width: 90%
+
+.sign-button
+	width: 50%
+	padding: 10px 20px
+
+.sign-button.up
+	display: inline-block
+
+.fb
+	background: linear-gradient(#2953ad,#234ca2);
+
+.forget
+	position: absolute
+	bottom: 10%
+	left: 15%
+	font-size: 14px
+	cursor: pointer
+
+
+
+

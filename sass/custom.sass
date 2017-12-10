@@ -5,6 +5,7 @@ $color-blue: #068fbf
 $color-green: #6faf4a
 
 $color-background: #F8F8F8
+$background-gary: #f3f3f1
 $color-border: #EBEBEB
 
 
@@ -33,6 +34,7 @@ a:hover
 
 body
 	color: #666
+	background: $background-gary
 
 
 @mixin text2($size,$color)
@@ -77,18 +79,14 @@ body
   font-weight: $font-weight
   letter-spacing: $letter-spacing
 
+//排版
+@mixin i-b
+	display: inline-block
+
 body
 	margin: 0px
 	padding: 0px
 	overflow-x: hidden
-	
-
-header
-	+full
-	background-color: #eee
-
-header
-	height: 550px
 
 section
 	+full
@@ -104,6 +102,7 @@ footer
 .banner
 	background: url('https://3hsyn13u3q9dhgyrg2qh3tin-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/SplitShire-2065.jpg') center center no-repeat
 	background-size: 1441px 
+	height: 550px
 
 .navbar
 	box-shadow: -1px -2px 12px -2px rgba(0,0,0,0.2)
@@ -231,6 +230,8 @@ footer
 	padding: 0
 	margin-right: 10px
 	width: 24%
+
+
 
 .box-pic
 	height: 200px
@@ -439,15 +440,141 @@ footer
 		border: none 
 
 #section3
+	background: #fff
 	.container
 		width: 100%
 
+
+//header over
+
+
+//Result Start
+
+.result-search-bar,.result-filter
+	height: 100px
+	padding: 25px
+
+.result-search-bar
+	input[type="text"]
+		width: 100%
+		height: 50px
+	.input-group
+		width: 100%
+
+.filter-date,.filter-budget,.filter-liked,.result-sreach-btn
+	+i-b
+
+.result-filter
+	padding-top: 0px
+	a
+		height: 50px
+		width: 250px
+		margin-right: 38px
+		line-height: 40px
+	.caret
+		margin-left: 5px
+.result-sreach-btn
+	button
+		height: 50px
+		width: 250px
+		background: $color-red
+		+text(18pt,#fff,500,1px)
+
+		&:hover
+			background: $color-red !important
+			+text(18pt,#fff,500,1px)
+
+.pintour-box.hori
+	width: 100%
+	border-radius: 5px
+	display: inline-block
+	position: relative
+	margin-bottom: 20px
+
+	.box-pic
+		width: 25%
+		+i-b
+		border-radius: 5px 0px 0px 5px
+		overflow: hidden
+		vertical-align: top
+	.box-info
+		padding: 20px 10px 10px 10px
+		width: 70%
+		+i-b
+		vertical-align: top
+		position: relative
+
+		.pinker-pic
+			left: -5%
+			top: 60%
 	
 
+	.box-text
+		font-size: 16pt
+		width: 80%
+		height: auto
+
+	.pre-content
+		font-size: 16px
+		padding: 10px
+		width: 80%
+		letter-spacing: 1px
+		color: rgba(#666,.7)
+		line-height: 18pt
 
 
+	.budget
+		color: #222
+		position: absolute
+		top: 13%
+		right: 0
+		background-color: #fff
 
+		.fa-usd
+			border: 2px solid
+			width: 20px
+			text-align: center
+			border-radius: 100%
+			margin-right: 5px
+
+	.box-bottom
+		display: flex
+		justify-content: space-between
+		align-items: center
+		left: 1%
+
+		.box-tag
+			display: inline-block
+			margin-top: 10px
+
+
+		.date-liked
+			font-size: 14pt
+			background-color: #fff
+			.date
+				font-weight: 400
+				.fa-clock-o
+					margin-right: 5px
+			.box-liked
+				font-size: 14pt
+				color: #222
+
+
+#pagination
+	cursor: pointer
+	width: 100%
+	height: 200px
 	
+	.pagination
+		margin: 0
+		+center
+		color: $color-blue
+
+		.active
+			span
+				background-color: $color-blue
+
+
 
 
 

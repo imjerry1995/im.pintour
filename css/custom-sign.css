@@ -1,0 +1,203 @@
+* {
+  position: relative;
+  -webkit-box-sizing: border-box;
+    -webkit-box-sizing--moz-box-sizing: border-box;
+    -webkit-box-sizing-box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #666; }
+
+a:hover {
+  text-decoration: none;
+  cursor: pointer; }
+
+body {
+  color: #666;
+  background: #f3f3f1; }
+
+* {
+  position: relative; }
+
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%; }
+
+body {
+  background: url(https://3hsyn13u3q9dhgyrg2qh3tin-wpengine.netdna-ssl.com/wp-content/uploads/2017/06/SplitShire-2065.jpg) no-repeat center center fixed;
+  background-size: cover; }
+
+button {
+  display: block; }
+
+.pintour-sign {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.pintour-sign {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%); }
+
+.pintour-sign-info {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  border-radius: 5px;
+  color: #f3f3f3;
+  background-color: rgba(34, 34, 34, 0.9); }
+  .pintour-sign-info .infos {
+    padding: 100px; }
+    .pintour-sign-info .infos p {
+      padding: 10px;
+      font-size: 20px; }
+  .pintour-sign-info .info-right {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .pintour-sign-info .sign-up {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 50px 0 0 10px;
+    border: 1px solid white;
+    text-align: center;
+    width: 100px;
+    border-radius: 5px;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    cursor: pointer; }
+    .pintour-sign-info .sign-up:hover {
+      color: #222;
+      background-color: white; }
+
+@-webkit-keyframes showtitle {
+  0% { } }
+
+@keyframes showtitle {
+  0% { } }
+
+.pintour-sign-slide {
+  position: absolute;
+  right: 0;
+  width: 400px;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px 12px rgba(34, 34, 34, 0.2);
+  box-shadow: 1px 1px 12px rgba(34, 34, 34, 0.2);
+  -webkit-transition-duration: .5s;
+  -o-transition-duration: .5s;
+  transition-duration: .5s; }
+
+.pintour-sign-slide.up {
+  height: 520px; }
+
+.title {
+  margin-top: 20px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  color: #068fbf; }
+  .title .fa {
+    margin-right: 10px; }
+
+.input-g {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .input-g label {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    display: block;
+    padding: 10px;
+    color: rgba(34, 34, 34, 0.4); }
+  .input-g input {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    width: 90%;
+    margin-left: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+    margin-bottom: 10px; }
+    .input-g input:focus {
+      outline: none; }
+  .input-g .focus-click {
+    -webkit-animation: showline .3s ease;
+    animation: showline .3s ease;
+    border-bottom: 1.5px solid #068fbf; }
+  .input-g button {
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-top: 20px;
+    background-color: #e59f28;
+    color: #fff;
+    letter-spacing: 2px;
+    border: none; }
+
+@-webkit-keyframes showline {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+
+@keyframes showline {
+  0% {
+    width: 0%; }
+  100% {
+    width: 90%; } }
+
+.sign-button {
+  width: 50%;
+  padding: 10px 20px; }
+
+.sign-button.up {
+  display: inline-block; }
+
+.fb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#2953ad), to(#234ca2));
+  background: -webkit-linear-gradient(#2953ad, #234ca2);
+  background: -o-linear-gradient(#2953ad, #234ca2);
+  background: linear-gradient(#2953ad, #234ca2); }
+
+.forget {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  font-size: 14px;
+  cursor: pointer; }
