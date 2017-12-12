@@ -1,0 +1,221 @@
+@import "custom.sass"
+
+*
+	posintion: relative
+
+
+
+.puzzle_wrapper
+	margin-top: 50px
+	margin-bottom: 50px
+	padding: 0px
+	display: flex
+	flex-flow: column wrap
+	justify-content: space-between
+
+.puzzle
+	width: 100%
+	background-color: #fff
+	padding: 20px
+	border: 1px solid $color-border
+
+
+	h2
+		font-size: 2em
+		margin-left: 50px
+		color: $color-green
+
+	.pic_info
+		display: flex
+		flex-flow: row wrap
+
+	.puzzle_pic,.puzzle_info
+		width: 50%
+		height: 350px
+
+	.puzzle_pic
+		padding: 20px 50px
+		img
+			width: 100%
+			height: 100%
+
+	.puzzle_info
+		padding: 20px
+		font-size: 1.2em
+
+		.stars
+			font-size: 1.6em
+			margin-top: 10px
+			margin-bottom: 10px
+			padding: 0px 10px
+			color: $color-yellow
+
+		p
+			padding: 10px
+
+			span
+				font-weight: bolder
+
+		button
+			margin-top: 20px
+			padding: 10px 30px
+			background-color: transparent
+			border: 2px solid 
+			margin-right: 20px
+			transition: .3s
+			border-radius: 5px
+			overflow: hidden
+
+			&:hover
+				color: white
+				background-color: $color-blue
+				border: 2px solid $color-blue
+
+
+		.add_box
+			.fa.fa-plus
+				position: absolute
+				left: 5%
+				bottom: -50%
+				 
+
+			&:hover
+				.fa.fa-plus
+					bottom: 24%
+					animation: turn_around .2s
+
+		.add_keep
+			.fa.fa-heart
+				position: absolute
+				left: 5%
+				bottom: -50%
+
+			&:hover
+				.fa.fa-heart
+					bottom: 24%
+					animation: scale .5s
+
+			&:hover
+				background-color: $color-red
+				border: 2px solid $color-red
+
+
+
+@keyframes turn_around
+	0%
+		transform: rotate(60deg)
+		transform-origin: 50% 30%
+	50%
+		transform: rotate(120deg)
+	100%
+		transform: rotate(180deg)
+
+@keyframes scale
+	0%
+		transform: scale(.5)
+	100%
+		transform: scale(1)
+
+
+
+
+
+.puzzle_react
+	margin-top: 50px
+	width: 100%
+	min-height: 150px
+	margin-bottom: 50px
+
+	h3
+		font-size: 1.5em
+		padding: 20px
+
+		&:after
+			content: ""
+			display: block
+			width: 70px
+			height: 3px
+			margin-top: 10px
+			margin-left: -10px
+			background-color: $color-orange
+
+.pinker_react
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+	width: 100%
+	padding: 20px 100px
+
+.pinker_pic
+	width: 60px
+	height: 60px
+	border-radius: 100px
+	overflow: hidden
+	position: absolute
+	img
+		width: 100%
+		height: 100%
+		z-index: -10
+
+	&:hover
+		overflow: 
+
+.pinker_id_time_floor
+	width: 100%
+	padding: 5px
+	margin-left: 80px
+	position: relative
+
+	.pinker_id,.date_time,.floor
+		display: inline-block
+
+
+	.pinker_id
+		color: $color-orange
+		font-size: 1.2em
+
+	.fa-clock-o
+		margin-right: 5px
+
+	.floor
+		position: absolute
+		right: 10%
+
+	hr
+		width: 90%
+		margin-left: -1px
+.comment
+	display: block
+	width: 100%
+	margin-left: 80px
+	padding: 10px
+
+.current_pinker
+	width: 100%
+	padding: 20px 100px
+	position: relative
+
+
+
+	textarea
+		width: 90%
+		outline: none
+		padding: 10px
+		margin-left: 80px
+		margin-top: 2px
+
+
+	button
+		padding: 10px 20px
+		border-radius: 5px
+		background-color: #eee
+		outline: none
+		position: absolute
+		top: 100%
+		right: 10%
+
+		&:hover
+			background-color: #ddd
+ 
+
+

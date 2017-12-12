@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<head lang="en">
+  <meta chatset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Pintour - 拼出你的旅遊地圖</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/custom-pinker.css">
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/custom.js" type="text/javascript"></script>
+</head>
+<body><!-- 最外圍 -->
+  <div class="wrapper">
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header"><!-- RWD 漢堡圖示 -->
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-expended="false"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><!-- Logo --><a class="navbar-brand" href="index.html"><img class="navbar-logo" src="images/logo.svg"></a>
+          </div><!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav navbar-nav">
+              <li><a href="#"> <i class="fa fa-map" aria-hidden="true"></i>拼圖吧 </a></li>
+              <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>找拼途</a></li>
+            </ul><!-- 使用者區 -->
+            <ul class="nav navbar-nav navbar-right nav-user">
+              <li><a href="login.html">登入</a></li>
+            </ul><!-- Menu 搜尋欄 -->
+            <form class="navbar-form navbar-right">
+              <div class="form-group">
+                <input class="form-control" type="text" placeholder="找拼圖、找拼途">
+              </div>
+              <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="pinker_wrapper container"><!-- 拼客自我資訊區 -->
+      <div class="pinker_info">
+        <div class="pinker_info_pic"><img src="images/pinkers/jerry.png" alt=""></div>
+        <div class="pinker_id">jerryeatsfish</div>
+        <p class="pinker_nick">Jerry愛吃魚</p>
+        <div class="pinker_intro"> 
+          <p>老了就是要走度假路線Ｒ！</p>
+        </div>
+        <button class="follow_button">追蹤</button>
+        <div class="track">
+          <div class="follow fans"> 
+            <p>粉絲</p><a href="">11</a>
+          </div>
+          <div class="follow"> 
+            <p>追蹤</p><a href="">15</a>
+          </div>
+        </div>
+      </div><!-- 拼客編輯區 -->
+      <div class="pinker_content">
+        <div class="pinker_menu">
+          <ul>
+            <li class="active"><a href="#mine-pintour" aria-controls="mine-pintour" role="tab" data-toggle="tab">我的拼途</a></li>
+            <li><a class="liked" href="#liked-pintour" aria-controls="mine-pintour" role="tab" data-toggle="tab">喜愛拼途</a></li>
+            <li><a class="liked_pin" href="#liked-pin" aria-controls="mine-pintour" role="tab" data-toggle="tab">喜愛拼圖</a></li>
+          </ul>
+        </div>
+        <div class="tab-content" id="content_list">
+          <div class="tab-pane active" id="mine-pintour" role="tabpanel">
+            <div class="list_show row"><a class="pintour-box pinkerview col-md-4">
+                <div class="box-pic"><img src="http://img3.okgo.tw/titlepic/b1520_3.jpg"></div>
+                <div class="box-info">
+                  <div class="pinker-pic"><img src="images/pinkers/jerry.png"></div>
+                  <div class="date-budget">
+                    <div class="date">2017-11-11 |</div>
+                    <div class="budget">$2000</div>
+                  </div>
+                  <div class="box-liked">
+                    <p class="fa fa-heart" aria-hidden="true"></p>
+                    <div class="liked">15</div>
+                  </div>
+                  <div class="box-text">台北擎天岡風大雨大兩天一夜之旅</div>
+                  <div class="box-tags">
+                    <div class="tags area">台北</div>
+                    <div class="tags days">兩天一夜</div>
+                    <div class="tags point">擎天岡</div>
+                  </div>
+                </div></a><a class="pintour-box pinkerview col-md-4">
+                <div class="box-pic"><img src="http://img3.okgo.tw/titlepic/b1520_3.jpg"></div>
+                <div class="box-info">
+                  <div class="pinker-pic"><img src="images/pinkers/jerry.png"></div>
+                  <div class="date-budget">
+                    <div class="date">2017-11-11 |</div>
+                    <div class="budget">$2000</div>
+                  </div>
+                  <div class="box-liked">
+                    <p class="fa fa-heart" aria-hidden="true"></p>
+                    <div class="liked">15</div>
+                  </div>
+                  <div class="box-text">台北擎天岡風大雨大兩天一夜之旅</div>
+                  <div class="box-tags">
+                    <div class="tags area">台北</div>
+                    <div class="tags days">兩天一夜</div>
+                    <div class="tags point">擎天岡</div>
+                  </div>
+                </div></a><a class="pintour-box pinkerview col-md-4">
+                <div class="box-pic"><img src="http://img3.okgo.tw/titlepic/b1520_3.jpg"></div>
+                <div class="box-info">
+                  <div class="pinker-pic"><img src="images/pinkers/jerry.png"></div>
+                  <div class="date-budget">
+                    <div class="date">2017-11-11 |</div>
+                    <div class="budget">$2000</div>
+                  </div>
+                  <div class="box-liked">
+                    <p class="fa fa-heart" aria-hidden="true"></p>
+                    <div class="liked">15</div>
+                  </div>
+                  <div class="box-text">台北擎天岡風大雨大兩天一夜之旅</div>
+                  <div class="box-tags">
+                    <div class="tags area">台北</div>
+                    <div class="tags days">兩天一夜</div>
+                    <div class="tags point">擎天岡</div>
+                  </div>
+                </div></a><a class="pintour-box pinkerview col-md-4">
+                <div class="box-pic"><img src="http://img3.okgo.tw/titlepic/b1520_3.jpg"></div>
+                <div class="box-info">
+                  <div class="pinker-pic"><img src="images/pinkers/jerry.png"></div>
+                  <div class="date-budget">
+                    <div class="date">2017-11-11 |</div>
+                    <div class="budget">$2000</div>
+                  </div>
+                  <div class="box-liked">
+                    <p class="fa fa-heart" aria-hidden="true"></p>
+                    <div class="liked">15</div>
+                  </div>
+                  <div class="box-text">台北擎天岡風大雨大兩天一夜之旅</div>
+                  <div class="box-tags">
+                    <div class="tags area">台北</div>
+                    <div class="tags days">兩天一夜</div>
+                    <div class="tags point">擎天岡</div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="tab-pane" id="liked-pintour" role="tabpanel">
+            <div class="list_show row"><a class="pintour-box pinkerview col-md-4">
+                <div class="box-pic"><img src="http://img3.okgo.tw/titlepic/b1520_3.jpg"></div>
+                <div class="box-info">
+                  <div class="pinker-pic"><img src="images/pinkers/jerry.png"></div>
+                  <div class="date-budget">
+                    <div class="date">2017-11-11 |</div>
+                    <div class="budget">$2000</div>
+                  </div>
+                  <div class="box-liked">
+                    <p class="fa fa-heart" aria-hidden="true"></p>
+                    <div class="liked">15</div>
+                  </div>
+                  <div class="box-text">台北擎天岡風大雨大兩天一夜之旅</div>
+                  <div class="box-tags">
+                    <div class="tags area">台北</div>
+                    <div class="tags days">兩天一夜</div>
+                    <div class="tags point">擎天岡</div>
+                  </div>
+                </div></a><a class="pintour-box pinkerview col-md-4">
+                <div class="box-pic"><img src="http://img3.okgo.tw/titlepic/b1520_3.jpg"></div>
+                <div class="box-info">
+                  <div class="pinker-pic"><img src="images/pinkers/jerry.png"></div>
+                  <div class="date-budget">
+                    <div class="date">2017-11-11 |</div>
+                    <div class="budget">$2000</div>
+                  </div>
+                  <div class="box-liked">
+                    <p class="fa fa-heart" aria-hidden="true"></p>
+                    <div class="liked">15</div>
+                  </div>
+                  <div class="box-text">台北擎天岡風大雨大兩天一夜之旅</div>
+                  <div class="box-tags">
+                    <div class="tags area">台北</div>
+                    <div class="tags days">兩天一夜</div>
+                    <div class="tags point">擎天岡</div>
+                  </div>
+                </div></a></div>
+          </div>
+          <div class="tab-pane" id="liked-pin" role="tabpanel">
+            <div class="list_show row"><a class="puzzle-box col-md-4" href="puzzle.html">
+                <div class="puzzle-pic"><img src="https://i.imgur.com/ZjKCJl2.png"></div>
+                <div class="puzzle-info">
+                  <div class="keep"><span class="fa fa-heart" aria-hidden="true"></span></div>
+                  <h3>秋紅谷</h3>
+                  <div class="stars"><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star" aria-hidden="true"></span><span class="fa fa-star-o" aria-hidden="true"></span><span class="fa fa-star-o" aria-hidden="true"></span></div>
+                  <p> <span class="fa fa-phone" aria-hidden="true"></span>0970-303-719</p>
+                  <p> <span class="fa fa-map-marker" aria-hidden="true"></span>407台中市西屯區朝富路30號</p>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="catogory">
+        <ul class="catogory-list">關於Pintour
+          <li><a href="">Pintour簡介</a></li>
+          <li><a href="">團隊成員</a></li>
+          <li><a href="">聯繫我們</a></li>
+        </ul>
+        <ul class="catogory-list">Pintour指南
+          <li><a href="">操作手冊</a></li>
+          <li><a href="">網站地圖</a></li>
+        </ul>
+        <ul class="catogory-list">加入Pintour
+          <li><a href="">加入我們</a></li>
+          <li><a href="">企業合作</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <div class="copy-text">Copyright © 2017 , NCUE IM , Pintour - 拼出你的旅遊地圖</div>
+      </div>
+    </footer>
+    <script>
+      $('.pinker_menu > a').click(function (e) {
+      	e.preventDefault()
+      	$(this).tab('show')
+      });
+      
+      //- $('#liked-pintour a').click(function (e) {
+      //- 	e.preventDefault()
+      //- 	$(this).tab('show')
+      //- });
+      //- $('#liked-pin a').click(function (e) {
+      //- 	e.preventDefault()
+      //- 	$(this).tab('show')
+      //- });
+    </script>
+  </div>
+</body>

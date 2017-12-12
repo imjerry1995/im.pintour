@@ -67,6 +67,72 @@ $(document).ready(function() {
 		});
 	}
 
+	//pinker頁面
+
+	var isFollow = 1;
+
+	$(".follow_button ").click(function(event) {
+		if(isFollow == 1){
+			$(this).text("已追蹤").css({
+				backgroundColor: '#ad5958',
+				color: 'white',
+				border: 'none'
+			});;
+			isFollow = 0;
+		}else if(isFollow == 0){
+			$(this).text("追蹤").css({
+				backgroundColor: '',
+				color: '',
+				border: ''
+			});;
+			isFollow = 1;
+		}
+		
+	});
+
+	$(".keep").mouseenter(function(event) {
+		$(".keep span").removeClass("fa-heart").delay(1000).addClass("fa-times").css({
+			fontSize: '18pt',
+			marginTop: '-1px'
+		});
+	});
+
+	$(".keep").mouseleave(function(event) {
+		$(".keep span").removeClass("fa-times").delay(1000).addClass("fa-heart").css({
+			fontSize: '',
+			marginTop: ''
+		});
+		
+	});
+
+	$(".keep").click(function(){
+		$(".puzzle-box").html("")
+		.removeClass('puzzle-box');
+	});
+
+
+	// //puzzle 頁面
+	// $(".add_box").click(function(event){
+	// 	if(isFollow == 1){
+	// 		$(this).text("已加入行程").css({
+	// 			backgroundColor: '#068fbf',
+	// 			color: 'white',
+	// 			border: 'none'
+	// 		});
+	// 		isFollow = 0;
+	// 	}else if(isFollow == 0){
+	// 		$(this).text("加入行程").css({
+	// 			backgroundColor: '',
+	// 			color: '',
+	// 			border: ''
+	// 		});;
+	// 		isFollow = 1;
+	// 	}
+		
+	// }); 
+
+
+
 	
 
 

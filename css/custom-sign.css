@@ -16,6 +16,10 @@ body {
   color: #666;
   background: #f3f3f1; }
 
+footer {
+  background: #333;
+  color: #fff; }
+
 * {
   position: relative; }
 

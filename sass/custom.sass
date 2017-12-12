@@ -4,8 +4,10 @@ $color-orange: #e59f28
 $color-blue: #068fbf
 $color-green: #6faf4a
 
+$color-yellow: #F8C43F
+
 $color-background: #F8F8F8
-$background-gary: #f3f3f1
+$background-gary: #fafafa
 $color-border: #EBEBEB
 
 
@@ -117,6 +119,7 @@ footer
 
 .navbar-brand
 	padding: 3px
+	z-index: 1
 
 .navbar-brand 
 	img
@@ -195,6 +198,8 @@ footer
 	color: rgba(255,255,255,0.7)
 	font-style: italic
 
+//header over
+
 
 .home-title
 	margin-top: 30px
@@ -211,6 +216,8 @@ footer
 
 .home-title.latest h2
 	color: #fff
+
+	//拼圖呈現
 
 .pintour-box
 	+border($color-border)
@@ -239,11 +246,14 @@ footer
 
 
 .box-pic
-	overflow: hidden
+	overflow: hidden !important
 	img
+		border-radius: 10px 10px 0px 0px
 		width: 100%
 		height: 100%
 		transition: .3s
+		overflow: hidden !important
+
 
 .pinker-pic
 	+size(60px,60px)
@@ -318,6 +328,9 @@ footer
 .tags.point
 	background-color: $color-orange
 
+//拼圖呈現 end
+
+//ajax 子彈
 
 .ajax-bullet
 	border: 1.5px solid $color-blue
@@ -347,6 +360,8 @@ footer
 	height: 15px
 	border-radius: 40px
 
+//ajax 子彈end
+
 
 //swiper
 .swiper-container
@@ -373,6 +388,26 @@ footer
 	text-align: center
 	margin-top: 30px
 
+
+#section1
+	background: $background-gary
+
+#section2
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)
+
+#section2
+	.pintour-box
+		border: none 
+
+#section3
+	background: #fff
+	.container
+		width: 100%
+
+
+
+
+//footer
 .catogory
 	height: 220px
 	padding: 50px
@@ -408,6 +443,7 @@ footer
 		position: absolute
 		top: -2px
 		left: -20px
+
 	
 .copyright
 	height: 50px
@@ -428,24 +464,7 @@ footer
 		display: inline-block
 		width: 20px
 
-
-#section1
-	background: #f3f3f1
-
-#section2
-	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%)
-
-#section2
-	.pintour-box
-		border: none 
-
-#section3
-	background: #fff
-	.container
-		width: 100%
-
-
-//header over
+//footer end
 
 
 //Result Start

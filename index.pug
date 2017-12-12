@@ -34,7 +34,7 @@ body
 							span.icon-bar
 							span.icon-bar
 						<!-- Logo -->
-						a.navbar-brand(href='#')
+						a.navbar-brand(href='index.html')
 							img.navbar-logo(src='images/logo.svg')
 
 					<!-- Menu -->
@@ -65,7 +65,7 @@ body
 
 			.search_bar
 				input.search_input(type='text',placeholder='搜尋：台中三天兩夜')
-				button(type='submit')
+				button(type='submit',onclick="javascript:location.href='result.html'")
 					i.fa.fa-map-marker(aria-hidden="true")
 
 		<!--  最新拼圖 -->
@@ -242,27 +242,27 @@ body
 				div.hot-pinker
 					div.swiper-container
 						div.swiper-wrapper
-							div.swiper-slide 
+							a(href="pinker.html").swiper-slide 
 								.hot-pic
 									img(src='images/pinkers/jerry.png')
 								.hot-pic-id @jerry
-							div.swiper-slide 
+							a(href="pinker.html").swiper-slide 
 								.hot-pic
 									img(src='images/pinkers/jerry.png')
 								.hot-pic-id @jerry
-							div.swiper-slide 
+							a(href="pinker.html").swiper-slide 
 								.hot-pic
 									img(src='images/pinkers/jerry.png')
 								.hot-pic-id @jerry
-							div.swiper-slide 
+							a(href="pinker.html").swiper-slide 
 								.hot-pic
 									img(src='images/pinkers/jerry.png')
 								.hot-pic-id @jerry
-							div.swiper-slide 
+							a(href="pinker.html").swiper-slide 
 								.hot-pic
 									img(src='images/pinkers/jerry.png')
 								.hot-pic-id @jerry
-							div.swiper-slide 
+							a(href="pinker.html").swiper-slide 
 								.hot-pic
 									img(src='images/pinkers/jerry.png')
 								.hot-pic-id @jerry
